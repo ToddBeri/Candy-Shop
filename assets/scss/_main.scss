@@ -1,0 +1,305 @@
+header{ 
+    background-color: rgb(255, 199, 89);
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 55px 0 55px;
+    font-weight: 700;
+    align-items: center;
+    a{
+      font-size: 25px;
+      color: $red;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .headerInfo{
+      height: 110px;
+      width: 500px;
+      margin: 0 auto;
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      }
+  }
+  
+  .main{
+    height: 650px;
+    background-color: rgb(255, 245, 211);
+    //position: absolute;
+    display: flex;
+    .wrapper{
+      padding: 165px 0 0 200px;
+      font-size: 50px;
+      width: 550px;
+      .container{
+        justify-content: space-between;
+        display: flex;
+        .red_text{
+          color: $red;
+        }
+      }
+      
+      .buttons{
+        padding-top: 110px;
+        justify-content: space-between;
+      }
+
+      .btn.orange:hover {
+        color:$red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 200px;
+        height: 90px;
+        border-radius: 50px;
+        transition: 0.4s;
+        border: none;
+      }
+      .btn.orange {
+        color: $red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 200px;
+        height: 90px;
+        border-radius: 37px;
+        transition: 0.4s;
+        background-color: rgb(255, 191, 68);
+        cursor: pointer;
+        border: none;
+      }
+      .btn.white:hover {
+        color:$red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 285px;
+        height: 90px;
+        border-radius: 50px;
+        transition: 0.4s;
+        border: 3px solid rgb(255, 191, 68);
+        
+      }
+      .btn.white {
+        color: $red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 285px;
+        height: 90px;
+        border-radius: 37px;
+        transition: 0.4s;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        border: 3px solid rgb(255, 191, 68);
+      }
+
+    }
+    img{
+      padding: 156px 85px 0 ;
+      height: 370px;
+      width: 554px;
+    }
+  }
+  .action{
+    position: relative; //если абсолют, то и релетив
+    height: 500px;
+    background-color: rgb(255, 230, 143);
+    display: flex;
+    .bg{
+      position: absolute; // если мы назначаем абсолют, то нужно обозначить/прикреппить = 0(точка отсчёта)
+      top: 0;
+      left: 0;
+      width: 100%; //назначив 100%, картинка будет повторяться по всей ширине.
+      height: 100%;
+      background-image: url(../img/fon.png);
+      opacity:0.15; // непрозрачность
+    }
+    .info{
+      padding: 150px 0 0 600px;
+      width: 640px;
+      p:first-child{
+        font-size: 50px;
+        color: $black;
+      }
+      p:last-child{
+        font-size: 65px;
+        color: $red;
+      }
+    }
+    p.plus{
+      position: relative;
+      font-size: 150px;
+      color: $red;
+      padding-top: 100px;
+    }
+    img.ice{
+      position: absolute;
+      width: 470px;
+      padding-left: 55px;
+      padding-top: 125px;
+      &.single{
+        left: 1250px;
+        top: 20px;
+        width: 205px;
+      }
+
+    }
+    
+  }
+  .catalog{
+    height: 2300px;
+    background-color: rgb(255, 245, 211);
+    img{
+      width: 100%;
+    }
+    p.main-title{
+      font-size: 50px;
+      text-align: center;
+      color: $red;
+      text-decoration: underline;
+    }
+    
+    .cards{
+      padding: 5% 1% ;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card{
+        margin: 0 3% 6% 3%;
+        width: 380px;
+        height: 610px;
+        color: $red;
+        border-radius: 30px;
+        transition: all ease 0.5s;
+        .content{
+          padding: 0 30px 0 30px ;
+          transform: scale(1);
+          transition: all ease 0.5s;
+          .description{
+            font-size: 20px;
+            color: $black;
+          }
+          .title{
+            margin: 20px 0 20px 0;
+            font-size: 30px;
+          }
+        }
+        .cover{
+          position: relative;
+          width: 367px;
+          height: 367px;
+          border-radius: 30px;
+          transform: scale(1); //добавляем тег в первую очередь не наведённой карточке
+          transition: all ease 0.5s; //добавляем тег в первую очередь не наведённой карточке
+          img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            border: 7px solid $red;
+            transform: scale(1);
+            transition: all ease 0.5s;
+          }
+        
+        }
+        .buy{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 20px;
+          font-size: 30px;
+          transform: scale(1);
+          transition: all ease 0.5s;
+          .counter{
+            display: flex;
+            cursor:default;
+            width: 130px;
+            justify-content: space-between;
+            background-color: rgb(255, 230, 143);
+            border-radius: 20px;
+            .btn_minus{
+              cursor: pointer;
+              border-radius: 20px 0 0 20px;
+              width: 100%;
+              border: none;
+              background-color: rgb(255, 230, 143);
+              color: $red;
+              font-size: 30px;
+            }
+            .btn_plus{
+              cursor: pointer;
+              border-radius: 0 20px 20px 0;
+              width: 100%;
+              border: none;
+              background-color: rgb(255, 230, 143);
+              color: $red;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      
+      .card:hover{  
+        box-shadow:0 0 30px rgba(0,0,0,0.22);
+        background-color: rgb(255, 245, 211);
+        border-radius: 30px;
+        transition: all ease 0.5s;
+        img{
+          transform: scale(0.9);
+          transition: all ease 0.5s;
+        }
+        p:not(.count){
+          transform: scale(1.1);
+          transition: all ease 0.7s;
+        }
+        
+
+
+        
+      }
+      
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      .btn.orange:hover {
+        color:$red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 340px;
+        height: 90px;
+        border-radius: 50px;
+        transition: 0.4s;
+        border: none;
+      }
+      .btn.orange {
+        color: $red;
+        font-family: 'Lemon', cursive;
+        font-weight: 600;
+        font-size: 25px;
+        width: 340px;
+        height: 90px;
+        border-radius: 37px;
+        transition: 0.4s;
+        background-color: rgb(255, 191, 68);
+        cursor: pointer;
+        border: none;
+      }
+      
+    }
+
+    
+  }
+  .faq{
+    height: 1000px;
+    background-color:rgb(255, 230, 143);
+  }
+

@@ -1,0 +1,308 @@
+#black {
+  background-color: #000;
+}
+
+#red {
+  background-color: rgb(156, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, body, .btn_minus, .btn_plus {
+  margin: 0;
+  font-family: "Lemon", cursive;
+}
+
+header {
+  background-color: rgb(255, 199, 89);
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px 0 55px;
+  font-weight: 700;
+  align-items: center;
+}
+header a {
+  font-size: 25px;
+  color: rgb(156, 0, 0);
+}
+header a:hover {
+  text-decoration: underline;
+}
+header .headerInfo {
+  height: 110px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  height: 650px;
+  background-color: rgb(255, 245, 211);
+  display: flex;
+}
+.main .wrapper {
+  padding: 165px 0 0 200px;
+  font-size: 50px;
+  width: 550px;
+}
+.main .wrapper .container {
+  justify-content: space-between;
+  display: flex;
+}
+.main .wrapper .container .red_text {
+  color: rgb(156, 0, 0);
+}
+.main .wrapper .buttons {
+  padding-top: 110px;
+  justify-content: space-between;
+}
+.main .wrapper .btn.orange:hover {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 200px;
+  height: 90px;
+  border-radius: 50px;
+  transition: 0.4s;
+  border: none;
+}
+.main .wrapper .btn.orange {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 200px;
+  height: 90px;
+  border-radius: 37px;
+  transition: 0.4s;
+  background-color: rgb(255, 191, 68);
+  cursor: pointer;
+  border: none;
+}
+.main .wrapper .btn.white:hover {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 285px;
+  height: 90px;
+  border-radius: 50px;
+  transition: 0.4s;
+  border: 3px solid rgb(255, 191, 68);
+}
+.main .wrapper .btn.white {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 285px;
+  height: 90px;
+  border-radius: 37px;
+  transition: 0.4s;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 3px solid rgb(255, 191, 68);
+}
+.main img {
+  padding: 156px 85px 0;
+  height: 370px;
+  width: 554px;
+}
+
+.action {
+  position: relative;
+  height: 500px;
+  background-color: rgb(255, 230, 143);
+  display: flex;
+}
+.action .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fon.png);
+  opacity: 0.15;
+}
+.action .info {
+  padding: 150px 0 0 600px;
+  width: 640px;
+}
+.action .info p:first-child {
+  font-size: 50px;
+  color: #000;
+}
+.action .info p:last-child {
+  font-size: 65px;
+  color: rgb(156, 0, 0);
+}
+.action p.plus {
+  position: relative;
+  font-size: 150px;
+  color: rgb(156, 0, 0);
+  padding-top: 100px;
+}
+.action img.ice {
+  position: absolute;
+  width: 470px;
+  padding-left: 55px;
+  padding-top: 125px;
+}
+.action img.ice.single {
+  left: 1250px;
+  top: 20px;
+  width: 205px;
+}
+
+.catalog {
+  height: 2300px;
+  background-color: rgb(255, 245, 211);
+}
+.catalog img {
+  width: 100%;
+}
+.catalog p.main-title {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(156, 0, 0);
+  text-decoration: underline;
+}
+.catalog .cards {
+  padding: 5% 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog .cards .card {
+  margin: 0 3% 6% 3%;
+  width: 380px;
+  height: 610px;
+  color: rgb(156, 0, 0);
+  border-radius: 30px;
+  transition: all ease 0.5s;
+}
+.catalog .cards .card .content {
+  padding: 0 30px 0 30px;
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
+.catalog .cards .card .content .description {
+  font-size: 20px;
+  color: #000;
+}
+.catalog .cards .card .content .title {
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+.catalog .cards .card .cover {
+  position: relative;
+  width: 367px;
+  height: 367px;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
+.catalog .cards .card .cover img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 7px solid rgb(156, 0, 0);
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
+.catalog .cards .card .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 30px;
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
+.catalog .cards .card .buy .counter {
+  display: flex;
+  cursor: default;
+  width: 130px;
+  justify-content: space-between;
+  background-color: rgb(255, 230, 143);
+  border-radius: 20px;
+}
+.catalog .cards .card .buy .counter .btn_minus {
+  cursor: pointer;
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  border: none;
+  background-color: rgb(255, 230, 143);
+  color: rgb(156, 0, 0);
+  font-size: 30px;
+}
+.catalog .cards .card .buy .counter .btn_plus {
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  width: 100%;
+  border: none;
+  background-color: rgb(255, 230, 143);
+  color: rgb(156, 0, 0);
+  font-size: 30px;
+}
+.catalog .cards .card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.22);
+  background-color: rgb(255, 245, 211);
+  border-radius: 30px;
+  transition: all ease 0.5s;
+}
+.catalog .cards .card:hover img {
+  transform: scale(0.9);
+  transition: all ease 0.5s;
+}
+.catalog .cards .card:hover p:not(.count) {
+  transform: scale(1.1);
+  transition: all ease 0.7s;
+}
+.catalog .button {
+  display: flex;
+  justify-content: center;
+}
+.catalog .button .btn.orange:hover {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 340px;
+  height: 90px;
+  border-radius: 50px;
+  transition: 0.4s;
+  border: none;
+}
+.catalog .button .btn.orange {
+  color: rgb(156, 0, 0);
+  font-family: "Lemon", cursive;
+  font-weight: 600;
+  font-size: 25px;
+  width: 340px;
+  height: 90px;
+  border-radius: 37px;
+  transition: 0.4s;
+  background-color: rgb(255, 191, 68);
+  cursor: pointer;
+  border: none;
+}
+
+.faq {
+  height: 1000px;
+  background-color: rgb(255, 230, 143);
+}
+
+/*# sourceMappingURL=style.css.map */

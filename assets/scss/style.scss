@@ -1,0 +1,39 @@
+$black: #000;
+$red: rgb(156, 0, 0);
+
+
+#black{
+    background-color: $black;
+}
+#red{
+    background-color: $red;
+}
+
+@mixin button($color){
+    border: 1px solid $color;
+    color: $color;
+    @include font(500);
+    padding: 10px 0;
+    background-color: transparent;
+    font-size: 14px;
+    transition: 0.5s;
+    width: 25%;
+    border-radius: 5px;
+}
+@mixin activeButton($color){
+    @include button($color);
+    background-color: $color;
+    color: $white;
+    cursor: pointer;
+}
+
+
+// импорты ПОСЛЕ цветов! последовательность важна! каждый новый - ниже предыдущего.
+@import 'default';
+@import 'main';
+
+
+
+
+
+
